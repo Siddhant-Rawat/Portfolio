@@ -1,0 +1,23 @@
+.footer {
+  width: 100%;
+  border-top: 2px solid #e8e8e8;
+  margin-top: 2rem;
+  background-color: #f1f1f1;
+
+  .footer_data {
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    padding: 1rem;
+    // padding-bottom: 1.5rem;
+
+    @media screen and (max-width: 400px) {
+      gap: 1rem;
+    }
+
+    @media screen and (max-width: 385px) {
+      gap: 0.6rem;
+      padding: 1rem 0.5rem;
+    }
+  }
+}

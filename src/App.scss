@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: lato;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 2rem;
+  background-color: #0a4c95;
+}
+
+::placeholder {  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: rgb(169, 169, 169);
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: rgb(169, 169, 169);
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: rgb(169, 169, 169);
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: roboto;
+  // background-color: #cecece;
+
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+    width: 100%;
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      // min-height: 100vh;
+      margin-top: 3rem;
+      width: 80%;
+
+      @media screen and (max-width: 950px) {
+        width: 90%;
+      }
+    }
+  }
+}

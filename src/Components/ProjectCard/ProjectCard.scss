@@ -1,0 +1,43 @@
+.project_card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #efefef;
+  padding: 1.5rem;
+  gap: 1rem;
+  background-color: rgb(237, 237, 237);
+  filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.377));
+  border-radius: 1rem;
+
+  .card_image {
+    img {
+      border-radius: 0.5rem;
+      // cursor: pointer;
+      transition: 0.3s ease;
+
+      &:hover {
+        scale: 1.02;
+      }
+    }
+  }
+  .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    .content_upper {
+      display: flex;
+      justify-content: space-between;
+
+      .content_links {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        gap: 0.5rem;
+
+        a:hover {
+          scale: 1.1;
+        }
+      }
+    }
+  }
+}
